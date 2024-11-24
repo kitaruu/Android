@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "253685571723",
+    "project_id": "verduritas-sa-cristianmansilla",
+    "storage_bucket": "verduritas-sa-cristianmansilla.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253685571723:android:2829c382feee190874f48e",
+        "android_client_info": {
+          "package_name": "cristian.mansilla.verduritassa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "253685571723-cbfnldnn5er1s4vkui2slgq2tu7j1edr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cristian.mansilla.verduritassa",
+            "certificate_hash": "2fbc4240edced9e54eb405c1c619e537fce23417"
+          }
+        },
+        {
+          "client_id": "253685571723-po5bj7ag8t1i80pvc4hp35s8pnh0gvtj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw0MtvcvHFKRlNw34LEpdulBQWaNMbE6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "253685571723-po5bj7ag8t1i80pvc4hp35s8pnh0gvtj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8FDF2"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#9CEC32"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Verduritas SA"
+            android:textColor="#3A590A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logoutIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/logout"
+            android:contentDescription="Logout" />
+    </LinearLayout>
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido Usuario"
+        android:textColor="#424242"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <!-- Cultivos Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#9CEC32"
+        android:padding="8dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tvCropsHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tus Cosechas"
+            android:textColor="#3A590A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/addCropIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/plus"
+            android:contentDescription="Add Crop" />
+    </LinearLayout>
+
+    <!-- Cultivos Table -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp">
+
+        <TableLayout
+            android:id="@+id/tableCrops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:background="@drawable/table_divider">
+            <!-- Filas dinámicas se generan desde el código -->
+        </TableLayout>
+    </ScrollView>
+
+
+    <!-- Opciones de Cultivo -->
+    <LinearLayout
+        android:id="@+id/optionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:background="#F8FDF2"
+        android:elevation="4dp"> <!-- Agrega elevación si deseas que parezca flotante -->
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EDITAR"
+            android:backgroundTint="#9CEC32"
+            android:textColor="#3A590A"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ELIMINAR"
+            android:backgroundTint="#E8FACE"
+            android:textColor="#3A590A"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

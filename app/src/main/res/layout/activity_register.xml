@@ -1,0 +1,121 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background_gradient">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="152dp"
+        android:layout_height="123dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:text="Email"
+        android:textColor="#3A590A"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="264dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edit_text"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp" />
+
+    <TextView
+        android:layout_width="264dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:textColor="#3A590A"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+
+        android:layout_width="264dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:paddingStart="16dp" />
+
+    <TextView
+        android:layout_width="264dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_height="wrap_content"
+        android:text="País"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:textColor="#3A590A"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/countryEditText"
+        android:layout_width="264dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint=""
+        android:inputType="text"
+        android:paddingStart="16dp" />
+
+    <TextView
+        android:layout_width="264dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_height="wrap_content"
+        android:text="Género"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:textColor="#3A590A"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/genderEditText"
+        android:layout_width="264dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint=""
+        android:inputType="text"
+        android:paddingStart="16dp" />
+
+    <TextView
+        android:layout_width="264dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:textColor="#3A590A"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="264dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint=""
+        android:inputType="textPassword"
+        android:paddingStart="16dp" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#14AF61"
+        android:fontFamily="sans-serif-black"
+        android:text="Registrarse"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

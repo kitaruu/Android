@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F8FDF2">
+
+    <!-- Barra superior con botón de regresar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#A6E77D"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/img"
+            android:contentDescription="Regresar"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verduritas SA"
+            android:textSize="20sp"
+            android:textColor="#3A590A"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Alias del Cultivo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alias"
+        android:layout_marginTop="16dp"
+        android:textColor="#3A590A"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etAlias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Alias del Cultivo"
+        android:padding="12dp"
+        android:inputType="textCapSentences" />
+
+    <!-- Fecha de Siembra -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de siembra"
+        android:layout_marginTop="16dp"
+        android:textColor="#3A590A"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etFechaSiembra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="DD/MM/AAAA"
+        android:padding="12dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="date" />
+
+    <!-- Planta (Spinner) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Planta"
+        android:layout_marginTop="16dp"
+        android:textColor="#3A590A"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerPlanta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="12dp" />
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#9CEC32"
+        android:text="Guardar"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>

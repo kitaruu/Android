@@ -1,0 +1,11 @@
+<resources>
+    <color name="dark_green">#9CEC32</color>
+    <color name="light_green">#E8FACE</color>
+    <color name="button_green">#14AF61</color>
+    <color name="border_green">#48760B</color>
+    <color name="background_white">#F8FDF2</color>
+    <color name="dark_font_green">#3A590A</color>
+    <color name="dark_gray">#424242</color>
+    <color name="pure_white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
